@@ -42,10 +42,10 @@ try:
     # Step 5: Check for email validation error
     error_message = driver.find_element(By.CLASS_NAME, "alert-danger").text
     assert "email" in error_message.lower()
-    print("✅ TC20 Passed: Invalid email format was correctly flagged.")
+    print("TC20 Passed: Invalid email format was correctly flagged.")
 
 except Exception as e:
-    print("❌ TC20 Failed:", e)
+    print("TC20 Failed:", e)
 
 finally:
     driver.quit()

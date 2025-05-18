@@ -26,10 +26,10 @@ try:
     # Step 4: Check for "no results" message
     no_result_element = driver.find_element(By.CSS_SELECTOR, "div.contentpanel")
     assert "There is no product that matches the search criteria." in no_result_element.text
-    print("✅ TC05 Passed: No results found message is displayed for invalid keyword.")
+    print("TC05 Passed: No results found message is displayed for invalid keyword.")
 
 except Exception as e:
-    print("❌ TC05 Failed:", e)
+    print("TC05 Failed:", e)
 
 finally:
     driver.quit()

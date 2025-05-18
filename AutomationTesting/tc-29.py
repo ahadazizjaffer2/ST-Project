@@ -33,10 +33,10 @@ try:
     email = driver.find_element(By.ID, "AccountFrm_email").get_attribute("value")
 
     assert firstname and email
-    print(f"✅ TC29 Passed: Profile information loaded. Name: {firstname}, Email: {email}")
+    print(f"TC29 Passed: Profile information loaded. Name: {firstname}, Email: {email}")
 
 except Exception as e:
-    print("❌ TC29 Failed:", e)
+    print("TC29 Failed:", e)
 
 finally:
     driver.quit()

@@ -22,10 +22,10 @@ try:
     WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.CSS_SELECTOR, ".maintext"))
     )
-    print("✅ TC01 Passed: Skincare category opened successfully.")
+    print("TC01 Passed: Skincare category opened successfully.")
 
 except Exception as e:
-    print("❌ TC01 Failed:", e)
+    print("TC01 Failed:", e)
 
 finally:
     driver.quit()

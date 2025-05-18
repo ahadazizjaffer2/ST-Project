@@ -30,10 +30,10 @@ try:
     # Step 4: Assert login successful
     welcome_text = driver.find_element(By.CLASS_NAME, "heading1").text
     assert "my account" in welcome_text.lower()
-    print("✅ TC23 Passed: Logged in successfully with valid credentials.")
+    print("TC23 Passed: Logged in successfully with valid credentials.")
 
 except Exception as e:
-    print("❌ TC23 Failed:", e)
+    print("TC23 Failed:", e)
 
 finally:
     driver.quit()

@@ -38,10 +38,10 @@ try:
 
     # Assert that prices are sorted ascending
     assert price_values == sorted(price_values), "Prices are not sorted correctly"
-    print("✅ TC08 Passed: Products are sorted from Low to High")
+    print("TC08 Passed: Products are sorted from Low to High")
 
 except Exception as e:
-    print("❌ TC08 Failed:", e)
+    print("TC08 Failed:", e)
 
 finally:
     driver.quit()

@@ -29,7 +29,7 @@ class text_to_be_present_in_element:
             return False
 
 def test_complete_checkout_with_valid_info():
-    driver = webdriver.Firefox(options=options)
+    driver = webdriver.Chrome(options=options)
     driver.maximize_window()
     
     try:

@@ -25,10 +25,10 @@ try:
 
     # Step 4: Verify the result contains the keyword
     assert "shampoo" in driver.page_source.lower()
-    print("✅ TC03 Passed: Valid keyword search returned results.")
+    print("TC03 Passed: Valid keyword search returned results.")
 
 except Exception as e:
-    print("❌ TC03 Failed:", e)
+    print("TC03 Failed:", e)
 
 finally:
     driver.quit()

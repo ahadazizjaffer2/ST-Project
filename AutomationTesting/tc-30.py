@@ -42,10 +42,10 @@ try:
     # Step 5: Verify the success message
     success_msg = driver.find_element(By.CLASS_NAME, "alert-success").text
     assert "success" in success_msg.lower()
-    print(f"✅ TC30 Passed: First name updated to '{new_first_name}'.")
+    print(f"TC30 Passed: First name updated to '{new_first_name}'.")
 
 except Exception as e:
-    print("❌ TC30 Failed:", e)
+    print("TC30 Failed:", e)
 
 finally:
     driver.quit()

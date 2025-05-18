@@ -1,6 +1,7 @@
 import os
 import subprocess
 import logging
+import sys
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -23,7 +24,7 @@ def run_all_tests(folder_path):
         file_path = os.path.join(folder_path, test_file)
         logger.info(f"Running test: {test_file}")
         try:
-            result = subprocess.run(['python', file_path], capture_output=True, text=True)
+            result = subprocess.run([sys.executable, file_path], capture_output=True, text=True)
             if result.returncode == 0:
                 logger.info(f"{test_file} completed successfully")
                 print(f"{test_file}: Success\n{result.stdout}")

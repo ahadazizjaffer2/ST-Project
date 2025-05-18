@@ -30,10 +30,10 @@ try:
     # Step 4: Verify error message is displayed
     error_alert = driver.find_element(By.CLASS_NAME, "alert-danger")
     assert "error" in error_alert.text.lower() or "invalid" in error_alert.text.lower()
-    print("✅ TC24 Passed: Error displayed for invalid username.")
+    print("TC24 Passed: Error displayed for invalid username.")
 
 except Exception as e:
-    print("❌ TC24 Failed:", e)
+    print("TC24 Failed:", e)
 
 finally:
     driver.quit()

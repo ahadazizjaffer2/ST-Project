@@ -42,9 +42,9 @@ try:
     logoff_links = dropdown_menu.find_elements(By.PARTIAL_LINK_TEXT, "Logoff")
 
     if logoff_links:
-        print(f"✅ TC27 Passed: Logoff option found in the dropdown for {username}.")
+        print(f"TC27 Passed: Logoff option found in the dropdown for {username}.")
     else:
-        print(f"❌ TC27 Failed: Logoff option not found in the dropdown for {username}.")
+        print(f"TC27 Failed: Logoff option not found in the dropdown for {username}.")
 
     # Step 5: Click the Logoff link
     logoff_links[0].click()     
@@ -53,11 +53,11 @@ try:
     login_button = driver.find_element(By.LINK_TEXT, "Login or register")
     
     if login_button.is_displayed():
-        print("✅ TC27 Passed: Successfully logged out, 'Login or Register' button is visible.")
+        print("TC27 Passed: Successfully logged out, 'Login or Register' button is visible.")
     else:
-        print("❌ TC27 Failed: 'Login or Register' button not found after logoff.")
+        print("TC27 Failed: 'Login or Register' button not found after logoff.")
 except Exception as e:
-    print("❌ TC27 Failed:", e)
+    print("TC27 Failed:", e)
 
 finally:
     driver.quit()

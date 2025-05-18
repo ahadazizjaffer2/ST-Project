@@ -49,10 +49,10 @@ try:
     # Step 5: Verify account creation success
     assert "Your Account Has Been Created" in driver.page_source or "account" in driver.current_url.lower()
 
-    print("✅ TC18 Passed: Account created successfully.")
+    print("TC18 Passed: Account created successfully.")
 
 except Exception as e:
-    print("❌ TC18 Failed:", e)
+    print("TC18 Failed:", e)
 
 finally:
     driver.quit()
